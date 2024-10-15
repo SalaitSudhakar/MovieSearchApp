@@ -39,16 +39,17 @@ const MovieDetails = () => {
 
   return (
     <div className="movie-details flex flex-col items-center justify-center gap-4 p-6 bg-gray-200">
-      <div className="container p-3">
+      <div className="container p-3 w-[90%] md:w-[80%] lg:w-[60%] border border-gray-400 bg-slate-300">
       <img
         src={clickedMovie.Poster}
         alt={clickedMovie.Title}
-        className="w-full mx-auto h-80 object-contain max-w-sm my-4 rounded-lg"
+        className="w-full mx-auto h-80 object-contain my-4 rounded-lg"
       />
-       <h1 className="text-2xl font-bold text-center pb-4 text-red-900">{clickedMovie.Title}</h1>
-       <hr className="border-t-4 w-full md:w-2/3 mx-auto"/>
+       <h1 className="text-2xl font-bold text-center pb-12 text-red-900">{clickedMovie.Title}</h1>
+       <hr className="border-t-2 border-gray-400 w-20 mx-auto border-dashed"/>
        </div>
-      <div className="container w-[90%] md:w-[80%] lg:w-[70%] mx-auto  m-8 break-words p-2 pt-0 md:px-24">
+
+      <div className="container w-[90%] md:w-[80%] lg:w-[60%] mx-auto  m-8 pt-6 mb-0 break-words p-2  md:px-24 border border-gray-400 bg-gray-300">
         <h3 className="text-xl font-bold  text-emerald-900 inline underline">Movie Details:</h3>
         <div className="text-lg py-4 ">
           <strong className="text-blue-900">Plot:</strong> 
