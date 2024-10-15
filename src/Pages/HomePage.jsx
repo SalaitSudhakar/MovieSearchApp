@@ -19,20 +19,23 @@ const HomePage = () => {
 
     useEffect(() => {
         const getMovies = async () => {
-            try {
-                const searchTerm = 'all';     
-                const data = await fetchMovies(searchTerm); 
-                if (data) {
-                  dispatch(setMovies(data));
-                 } 
-                
-            } catch (error) {
-                console.error("Error fetching movies:", error);
+            if (!movies || movies.length === 0){
+                try {
+                    const searchTerm = 'all';     
+                    const data = await fetchMovies(searchTerm); 
+                    if (data) {
+                      dispatch(setMovies(data));
+                     } 
+                    
+                } catch (error) {
+                    console.error("Error fetching movies:", error);
+                }
             }
+           
         };
 
         getMovies();
-    }, [curPage, dispatch]); // Only fetch movies when the current page changes
+    }, [curPage, dispatch, movies.length]); // Only fetch movies when the current page changes
 
     return (
         <div className='bg-slate-200'>
