@@ -7,7 +7,7 @@ const FavoritesPage = () => {
     const favorites = useSelector((state) => state.favourites.favourites);
 
     return (
-        <div className='bg-slate-100'>
+        <div className='bg-slate-200'>
         <div className='w-[90%] md:w-4/5 lg:w-3/4 mx-auto pt-2 md:pt-8 pb-12'>
             <h1 className="text-2xl font-bold m-8 mb-4 text-blue-900">Favorites</h1>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 min-h-44">

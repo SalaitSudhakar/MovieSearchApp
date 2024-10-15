@@ -14,7 +14,8 @@ const Navbar = () => {
     const handleSearch = async (e) => {
         e.preventDefault();
         try {
-            const movies = await fetchMovies((query)?query:'all', (selectedType)?selectedType:''); 
+         
+            const movies = await fetchMovies((query) && query, (selectedType)?selectedType:''); 
             if (movies) {
                 dispatch(setMovies(movies));
             } 

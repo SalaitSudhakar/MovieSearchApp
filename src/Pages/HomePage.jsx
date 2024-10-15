@@ -35,7 +35,7 @@ const HomePage = () => {
     }, [curPage, dispatch]); // Only fetch movies when the current page changes
 
     return (
-        <div className='bg-slate-100'>
+        <div className='bg-slate-200'>
             <div className="container pt-8 w-[90%] md:w-4/5 mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12 items-center ">
                
                 {movies && movies.length > 0 ? (

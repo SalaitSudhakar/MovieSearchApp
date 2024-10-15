@@ -38,7 +38,7 @@ const MovieDetails = () => {
   }
 
   return (
-    <div className="movie-details flex flex-col items-center justify-center gap-4 p-6 bg-gray-100">
+    <div className="movie-details flex flex-col items-center justify-center gap-4 p-6 bg-gray-200">
       <div className="container p-3">
       <img
         src={clickedMovie.Poster}
@@ -72,7 +72,7 @@ const MovieDetails = () => {
         </div>
         <div className="text-lg py-4 ">
           <strong className="text-blue-900">IMDB Rating:</strong> 
-          <p className="py-2">{clickedMovie.imdbRating}</p>
+          <p className="py-2">{clickedMovie.imdbRating}/10</p>
         </div>
         {/* Add more movie details as needed */}
       </div>
