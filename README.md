@@ -21,4 +21,4 @@ This application lets users:
 - **OMDB API:** Fetches movie data and details.
 - **Tailwind CSS:** For styling the user interface.
 - **JavaScript:** For implementing the app's functionality and API calls.
-- **Redux:**  **Redux:** For managing the application's state.
+- **Redux:** For managing the application's state.
