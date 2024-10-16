@@ -12,7 +12,7 @@ This application lets users:
 - Navigate between pages using React Router.
 
 **Deployed App**: 
-[Movie Search App]("https://movie-search-app-reactjs.netlify.app/")
+[Movie Search App](https://movie-search-app-reactjs.netlify.app/)
 
 ## Tech Stack
 
