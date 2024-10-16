@@ -66,7 +66,7 @@ const HomePage = () => {
                         <MovieCard key={movie.imdbID} movie={movie} />
                     ))
                 ) : (
-                    <div className="flex justify-center min-h-screen items-center">
+                    <div className="flex justify-center w-full items-center">
                     <img
                       src="https://admiral.digital/wp-content/uploads/2023/08/404_page-not-found.png"
                       alt="Loading"

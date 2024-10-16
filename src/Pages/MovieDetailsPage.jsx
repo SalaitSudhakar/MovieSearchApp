@@ -16,8 +16,9 @@ const MovieDetails = () => {
 
   useEffect(() => {
     const getMovies = async () => {
+      if (!clickedMovie || clickedMovie.imdbID !== parseInt(id))
       try {
-        if (!clickedMovie || clickedMovie.imdbID !== parseInt(id)) {
+         {
           // Fetch only if movie data is not available or if id changed
           const data = await fetchMovies("", "", id);
           dispatch(setSelectedMovie(data));
