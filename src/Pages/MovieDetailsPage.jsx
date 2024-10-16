@@ -43,8 +43,8 @@ const MovieDetails = () => {
   }
 
   return (
-    <div className="movie-details flex flex-col items-center justify-center p-3 md:p-6 bg-gray-200">
-      <div className="container p-3 pt-4 w-full md:w-[80%] lg:w-[60%] bg-slate-300">
+    <div className="movie-details flex flex-col items-center justify-center p-3 md:p-6 bg-gray-200 ">
+      <div className="container p-3 pt-4 w-full md:w-[80%] lg:w-[60%] bg-slate-300 border-2 border-b-0 border-black shadow-md shadow-blue-900 rounded-md rounded-b-none">
       <img
         src={clickedMovie.Poster}
         alt={clickedMovie.Title}
@@ -54,7 +54,7 @@ const MovieDetails = () => {
        <hr className="border-t-2 border-black w-20 mx-auto border-dashed"/>
        </div>
 
-      <div className="container w-full md:w-[80%] lg:w-[60%] mx-auto  m-8 pt-6 mt-0 break-words p-3 md:px-24  bg-gray-300">
+      <div className="container w-full md:w-[80%] lg:w-[60%] mx-auto  m-8 pt-6 mt-0 break-words p-3 md:px-24 border-2 border-black border-t-0 rounded-md rounded-t-none bg-gray-300 shadow-lg shadow-blue-900">
         <h3 className="text-xl font-bold  text-emerald-900 inline pb-8">Movie Details <BiSolidMovie className="inline text-black"/> :-</h3>
         <div className="text-lg py-4 ">
           <strong className="text-blue-900">Plot <MdLocalMovies className="inline text-black"/> :</strong> 
